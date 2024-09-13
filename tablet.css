@@ -1,0 +1,141 @@
+.header-title h1 {
+    font-size: 3rem;
+  }
+  
+  .nav-menu {
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 0; 
+    overflow: hidden; 
+    padding: 0; 
+    transition: height 0.3s ease-in; 
+  }
+  
+  .nav-menu.active {
+    height: 40vh; 
+    padding: 4rem; 
+  }
+  .nav-menu-wrap{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mark{
+    position: relative;
+  }
+  
+  #mark{
+    position: absolute;
+    right: 0;
+  }
+  
+  .nav-bar {
+    display: block;
+  }
+  
+  nav ul li {
+    display: block;
+  }
+  
+  .menu-list a{
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  
+  main {
+    padding: 0 4rem;
+  }
+  
+  .hero {
+    height: 70vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  .trendy-recipes {
+    margin-top: 5rem;
+  }
+  
+  .trendy-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .trendy-recipe {
+    gap: 1rem;
+    padding: 0;
+  }
+  
+  .trendy-recipe > div {
+    padding: 0;
+  }
+  
+  .burger-img {
+    width: 100%;
+  }
+  
+  .burger-info {
+    width: 100%;
+  }
+  
+  .featured-dishes {
+    margin-top: 5rem;
+  }
+  
+  .delivery-logo {
+    display: none;
+  }
+  
+  .delivery-img > img {
+    width: 100%;
+  }
+  
+  .delivery-text {
+    text-align: center;
+  }
+  
+  .delivery-text > h2 {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  
+  .delivery-text > p {
+    font-size: 1.8rem;
+  }
+  
+  .featured-images {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    margin-top: 5rem;
+    padding: 0;
+  }
+  
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    column-gap: 10rem;
+    row-gap: 4rem;
+    padding: 2rem;
+  }
+  
+  .footer-logo {
+    grid-area: 3/2/4/3;
+    justify-self: end;
+  }
+  
+  .subscribe {
+    padding: 0;
+    grid-area: 1/1/2/2;
+  }
+  
+  .copyright {
+    grid-area: 4/1/5/3;
+    justify-self: center;
+  }

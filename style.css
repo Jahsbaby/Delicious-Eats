@@ -1,0 +1,499 @@
+html {
+    font-size: 62.5%;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 1.6rem;
+    background-color: #fff;
+    line-height: 1.5;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  header {
+    background-color: #fff;
+    padding: 1.5rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.1rem solid #e4dada;
+    position: sticky;
+    top: 0;
+  }
+  
+  .nav-bar {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .logo-title {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .img-logo img {
+    width: 6rem;
+    height: auto;
+  }
+  
+  .header-title h1 {
+    margin: 0;
+    color: #e31212;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 2rem;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 2rem;
+  }
+  
+  nav ul li a:hover {
+    color: #e31212;
+  }
+  
+  .menu-list a{
+    color: #e31212;
+  }
+  
+  main {
+    padding: 4rem 10rem;
+  }
+  
+  .hero {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 3px solid rgb(239, 131, 131);
+    margin-top: 4rem;
+  }
+  
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4rem;
+    line-height: 2;
+  }
+  
+  .hero-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+  
+  .hero-title > h2 > span {
+    color: #e31212;
+  }
+  
+  .hero-p {
+    font-size: 1.8rem;
+  }
+  
+  .hero-btn {
+    margin-top: 2rem;
+  }
+  
+  .btn {
+    background-color: #e31212;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    color: #fff;
+  }
+  
+  .btn:hover {
+    background-color: #b13535;
+  }
+  
+  .hero-img {
+    background-image: url("../images/hero-img.jpeg");
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .trendy-recipes {
+    margin-top: 10rem;
+  }
+  
+  .trendy-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+  
+  .trendy-recipe {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+  }
+  
+  .trendy-recipe > div {
+    border-radius: 2rem;
+    padding: 2rem 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: #f9f6f6;
+  }
+  
+  .burger-img {
+    width: 90%;
+    height: 17rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  
+  .b-i-1 {
+    background-image: url("../images/burgers/Bacon-Cheese-Stuffed-Burgers.jpg");
+  }
+  
+  .b-i-2 {
+    background-image: url("../images/burgers/chicken-burger.jpg");
+  }
+  
+  .b-i-3 {
+    background-image: url("../images/burgers/cheese-burger.jpg");
+  }
+  
+  .recipe-ingredient span {
+    font-weight: 600;
+  }
+  
+  .burger-info {
+    width: 90%;
+  }
+  
+  .trendy-title span {
+    color: #e31212;
+  }
+  
+  /* Featured starts here */
+  
+  .featured-dishes {
+    margin-top: 10rem;
+    padding: 4rem;
+    border: 0.2rem dashed #ed7621;
+  }
+  
+  .featured-dishes > h2 > span {
+    color: #e31212;
+  }
+  
+  .featured-container {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+  
+  .featured-item {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    text-align: center;
+  }
+  
+  .featured-item:hover {
+    background-color: #ed7621;
+    background-color: #aa5c5c;
+    color: #fff;
+  }
+  
+  .featured-item img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    border: 0.5rem solid #b13535;
+    margin-bottom: 1rem;
+  }
+  
+  /* Featured ends here */
+  
+  .delivery {
+    display: flex;
+    margin-top: 10rem;
+    gap: 2rem;
+  }
+  
+  .delivery-imgs {
+    flex: 1;
+    display: flex;
+  }
+  
+  .delivery-img {
+    flex: 3;
+  }
+  
+  .delivery-img > img {
+    width: 80%;
+    height: 40rem;
+  }
+  
+  .delivery-logo {
+    flex: 1;
+    align-self: center;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .delivery-logo > img {
+    width: 10rem;
+  }
+  
+  .delivery-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* line-height: 2; */
+    text-align: center;
+  }
+  
+  .delivery-text > h2 {
+    font-size: 5rem;
+    font-weight: 900;
+  }
+  
+  .delivery-text > p {
+    font-size: 2rem;
+  }
+  
+  .delivery-btn {
+    margin-top: 2rem;
+    background-color: #e31212;
+    padding: 1rem 1.5rem;
+    color: #fff;
+    border-radius: none;
+  }
+  
+  .featured-images {
+    margin-top: 10rem;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: auto;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .featured-images img {
+    width: 100%;
+    height: 20rem;
+  }
+  
+  footer {
+    background-image: url("../images/footer-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 4rem 6rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    gap: 3rem;
+  }
+  
+  footer a {
+    color: #fff;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-logo img {
+    height: 10rem;
+    height: 10rem;
+  }
+  
+  .footer-logo {
+    justify-self: center;
+  }
+  
+  .subscribe {
+    padding: 0 2rem;
+  }
+  
+  .subscribe-para {
+    margin: 2rem 0;
+  }
+  
+  .subscribe-input {
+    margin-bottom: 1rem;
+  }
+  
+  #email {
+    padding: 1.5rem 3rem;
+    font-weight: 700;
+    outline: none;
+  }
+  
+  #subscribe-btn {
+    padding: 1.2rem;
+    background-color: #333;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #subscribe-btn:hover {
+    background-color: #5a4d4d;
+  }
+  
+  .footer-1,
+  .others,
+  .social {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .copyright {
+    grid-area: 2/2/3/5;
+    justify-self: center;
+  }
+  
+  @media (min-width: 577px) and (max-width: 767px) {
+    .header-title h1 {
+      font-size: 3rem;
+    }
+  
+    .nav-menu {
+      display: none;
+    }
+  
+    .nav-bar {
+      display: block;
+    }
+  
+    main {
+      padding: 0 4rem;
+    }
+  
+    .hero {
+      height: 70vh;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+  
+    .trendy-recipes {
+      margin-top: 5rem;
+    }
+  
+    .trendy-recipe {
+      gap: 1rem;
+      padding: 0;
+    }
+  
+    .trendy-recipe > div {
+      padding: 0;
+    }
+  
+    .burger-img {
+      width: 100%;
+    }
+  
+    .burger-info {
+      width: 100%;
+    }
+  
+    .featured-dishes {
+      margin-top: 5rem;
+    }
+  
+    .featured-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .recipe-ingredient,
+    .burger-name {
+      font-size: 1.5rem;
+    }
+  
+    .delivery-logo {
+      display: none;
+    }
+  
+    .delivery-img > img {
+      width: 100%;
+    }
+  
+    .delivery-text {
+      text-align: center;
+    }
+  
+    .delivery-text > h2 {
+      font-size: 3rem;
+      font-weight: 900;
+    }
+  
+    .delivery-text > p {
+      font-size: 1.8rem;
+    }
+  
+    .featured-images {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.5rem;
+      margin-top: 5rem;
+      padding: 0;
+    }
+  
+    footer {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      column-gap: 10rem;
+      row-gap: 4rem;
+      padding: 2rem;
+    }
+  
+    .footer-logo {
+      grid-area: 3/2/4/3;
+      justify-self: end;
+    }
+  
+    .subscribe {
+      padding: 0;
+      grid-area: 1/1/2/2;
+    }
+  
+    .copyright {
+      grid-area: 4/1/5/3;
+      justify-self: center;
+    }
+  }

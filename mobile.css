@@ -1,0 +1,156 @@
+body {
+    font-size: 1.5rem;
+  }
+  
+  header {
+    padding: 1rem 2rem;
+    position: relative;
+  }
+  
+  .header-title h1 {
+    font-size: 2.5rem;
+  }
+  
+  .img-logo img {
+    width: 5rem;
+  }
+  
+  .nav-menu {
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 0; 
+    overflow: hidden; 
+    padding: 0; 
+    transition: height 0.3s ease; 
+  }
+  
+  .nav-menu.active {
+    height: 50vh; 
+    padding: 4rem; 
+  }
+  
+  .nav-menu-wrap{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mark{
+    position: relative;
+  }
+  
+  #mark{
+    position: absolute;
+    right: 0;
+  }
+  
+  .nav-bar {
+    display: block;
+  }
+  
+  nav ul li {
+    display: block;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    padding: 0 2rem;
+  }
+  
+  .hero {
+    height: 80vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .intro {
+    line-height: 1.5;
+  }
+  
+  .trendy-recipes {
+    margin-top: 5rem;
+  }
+  
+  .trendy-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .trendy-recipe {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .featured-dishes {
+    margin-top: 5rem;
+  }
+  
+  .featured-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .delivery {
+    flex-direction: column;
+    margin-top: 5rem;
+  }
+  
+  .delivery-imgs {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .delivery-img > img {
+    width: 100%;
+    height: 40rem;
+  }
+  
+  .delivery-text {
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  .delivery-text > h2 {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  
+  .delivery-text > p {
+    font-size: 1.6rem;
+  }
+  
+  .featured-images {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin-top: 5rem;
+    padding: 0;
+  }
+  
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    padding: 2rem;
+  }
+  
+  .subscribe {
+    padding: 0;
+    grid-area: 1/1/2/3;
+  }
+  
+  .copyright {
+    grid-area: 4/1/5/3;
+    justify-self: center;
+  }

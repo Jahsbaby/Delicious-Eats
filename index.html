@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delicious Eats</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/127922d8a4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/mobile.css" media="(max-width:576px)" />
+    <link
+      rel="stylesheet"
+      href="/tablet.css"
+      media="(min-width: 768px) and (max-width: 921px)"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo-title">
+        <div class="img-logo">
+          <a href="#"><img src="./logo.png" alt="logo" /></a>
+        </div>
+        <div class="header-title">
+          <a href="#"><h1>Delicious Eats</h1></a>
+        </div>
+      </div>
+      <div class="nav-menu" id="nav-menu">
+        <div class="nav-bar mark" onclick="handleNavBar()">
+          <i class="fa-solid fa-xmark fa-xl" id="mark"></i>
+        </div>
+        <div class="nav-menu-wrap">
+          <nav>
+            <ul class="menu-list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Reservations</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="nav-bar" onclick="handleNavBar()">
+        <i class="fa-solid fa-bars fa-xl"></i>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="intro">
+          <div class="hero-title">
+            <h2>Welcome to <span>Delicious Eats</span></h2>
+          </div>
+          <div class="hero-p">
+            <p>
+              Experience the finest culinary delights at our restaurant. From
+              delicious appetisers to mouth-watering desserts, we have it all.
+            </p>
+          </div>
+          <div class="hero-btn">
+            <a href="#" class="btn">View Menu</a>
+          </div>
+        </div>
+        <div class="hero-img"></div>
+      </section>
+
+      <section class="trendy-recipes">
+        <div class="trendy-info">
+          <div class="trendy-title">
+            <h2>Trendy <span>Burgers </span></h2>
+          </div>
+          <div class="trendy-btn">
+            <a href="#" class="btn">View More</a>
+          </div>
+        </div>
+
+        <div class="trendy-recipe">
+          <div class="trendy-recipe-1">
+            <div class="burger-img b-i-1"></div>
+            <div class="burger-info">
+              <div class="burger-name">
+                <h4>Bacon Cheese Burgers</h4>
+              </div>
+              <div class="recipe-ingredient">
+                <p>
+                  <span>Ingredients: </span> Ground beef, Bacon, Cheese, Burger
+                  buns, Lettuce etc.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="trendy-recipe-2">
+            <div class="burger-img b-i-2"></div>
+            <div class="burger-info">
+              <div class="burger-name">
+                <h4>Chicken Burgers</h4>
+              </div>
+              <div class="recipe-ingredient">
+                <p>
+                  <span>Ingredients: </span> Burger buns, Ground chicken,
+                  Lettuce, Tomato, Pickles etc.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="trendy-recipe-3">
+            <div class="burger-img b-i-3"></div>
+            <div class="burger-info">
+              <div class="burger-name">
+                <h4>Classic Cheese Burger</h4>
+              </div>
+              <div class="recipe-ingredient">
+                <p>
+                  <span>Ingredients: </span> Ground beef, Cheese, Lettuce,
+                  Burger buns, Pickles etc.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured-dishes">
+        <h2><span>Featured</span> Recipes</h2>
+        <div class="featured-container">
+          <div class="featured-items">
+            <a href="#" class="featured-item">
+              <img
+                src="./images/featured-dishes/pancake-fluffy.jpg"
+                alt="Pancakes Fluffy"
+              />
+              <h3>Fluffy Pancakes</h3>
+            </a>
+          </div>
+          <div class="featured-items">
+            <a href="#" class="featured-item">
+              <img
+                src="./images/featured-dishes/caramel-cake.jpg"
+                alt="Caramel Cake"
+              />
+              <h3>Exquisite Desserts</h3>
+            </a>
+          </div>
+          <div class="featured-items">
+            <a href="#" class="featured-item">
+              <img src="./images/featured-dishes/cold-drink.jpg" alt="Cold Drink" />
+              <h3>Bael</h3>
+            </a>
+          </div>
+          <div class="featured-items">
+            <a href="#" class="featured-item">
+              <img src="./images/featured-dishes/cookies.jpg" alt="Cookies" />
+              <h3>Cookie Frenzy</h3>
+            </a>
+          </div>
+          <div class="featured-items">
+            <a href="#" class="featured-item">
+              <img src="./images/featured-dishes/Doughnuts.jpg" alt="Doughnuts" />
+              <h3>For the Love of Doughnuts</h3>
+            </a>
+          </div>
+          <div class="featured-items">
+            <a href="#" class="featured-item">
+              <img src="./images/featured-dishes/milkshakes.jpg" alt="Milkshakes" />
+              <h3>Everything Milkshake</h3>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="delivery">
+        <div class="delivery-imgs">
+          <div class="delivery-img">
+            <img src="./images/featured-images/man-2-burger.jpg" alt="Man with Burger" />
+          </div>
+          <div class="delivery-logo">
+            <img src="./footer-logo.png" alt="burger toon" />
+          </div>
+        </div>
+        <div class="delivery-text">
+          <h2>Order Home Delivery</h2>
+          <p>
+            Order our delicious dishes for delivery. Participating stores only.
+          </p>
+          <a href="#" class="delivery-btn">FIND OUT MORE</a>
+        </div>
+      </section>
+
+      <section class="featured-images">
+        <div class="f-img-1">
+          <img src="./images/featured-images/bacon-cheese-1.jpg" alt="Bacon Cheese" />
+        </div>
+        <div class="f-img-2">
+          <img src="./images/featured-images/bacon-cheese-2.jpg" alt="Bacon Cheese" />
+        </div>
+        <div class="f-img-3">
+          <img src="./images/featured-images/bacon-cheese.jpg" alt="Bacon Cheese" />
+        </div>
+        <div class="f-img-4">
+          <img
+            src="./images/featured-images/boneless-wings-recipe.jpg"
+            alt="boneless wings recipe"
+          />
+        </div>
+        <div class="f-img-5">
+          <img src="./images/featured-images/breakfast.jpg" alt="breakfast" />
+        </div>
+        <div class="f-img-6">
+          <img src="./images/featured-images/burger-1.jpg" alt="burger" />
+        </div>
+        <div class="f-img-7">
+          <img
+            src="./images/featured-images/buttermilk-fried-chicken.jpg"
+            alt="fried chicken"
+          />
+        </div>
+        <div class="f-img-8">
+          <img src="./images/featured-images/fries.jpg" alt="fries" />
+        </div>
+        <div class="f-img-9">
+          <img src="./images/featured-images/grilled-beef.jpg" alt="grilled beef" />
+        </div>
+        <div class="f-img-10">
+          <img src="./images/featured-images/hero-img-2.jpg" alt="chicken wings" />
+        </div>
+        <div class="f-img-11">
+          <img src="./images/featured-images/pancake.jpg" alt="pancake" />
+        </div>
+        <div class="f-img-12">
+          <img
+            src="./images/featured-images/spanish-chicken-wings.jpg"
+            alt="spanish chicken wings"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="subscribe">
+        <form action="#">
+          <div class="subscribe-title">
+            <h1>Tasty Updates</h1>
+          </div>
+          <div class="subscribe-para">
+            <p>
+              Sign-up for snapshots of all things Delicious Eats, including
+              special offers, news, and more!
+            </p>
+          </div>
+          <div class="subscribe-input">
+            <input
+              type="email"
+              id="email"
+              name="subscribe"
+              placeholder="Email Address"
+            />
+          </div>
+          <div class="subscribe-btn">
+            <button type="submit" value="Subscribe" id="subscribe-btn">
+              Subscribe
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="footer-1">
+        <a href="#">Home</a>
+        <a href="#">Order</a>
+        <a href="#">Find Us</a>
+        <a href="#">Menu</a>
+        <a href="#">FAQs</a>
+      </div>
+
+      <div class="others">
+        <a href="#">About</a>
+        <a href="#">Press</a>
+        <a href="#">Jobs</a>
+        <a href="#">Feedback</a>
+        <a href="#">Nutritional Information</a>
+      </div>
+
+      <div class="social">
+        <a href="#">Instagram</a>
+        <a href="#">Facbook</a>
+        <a href="#">Twitter</a>
+        <a href="#">TikTok</a>
+      </div>
+
+      <div class="footer-logo">
+        <img src="./footer-logo.png" alt="burger toon" />
+      </div>
+
+      <div class="copyright">
+        <p>&copy; 2024 Delicious Eats. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
